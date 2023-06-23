@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "python-example"
+version = "0.1.0"
+description = "Python project example 🐍"
+license = "MIT"
+authors = ["quickplates <quickplates@mail.spietras.dev>"]
+readme = "README.md"
+repository = "https://github.com/quickplates/python-example"
+documentation = "https://quickplates.github.io/python-example"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+# Pydantic and OmegaConf are used for configuration
+pydantic = { version = "^1.10", extras = ["dotenv"] }
+omegaconf = "^2.3"
+# Typer makes it easy to build CLI apps
+typer = { version = "^0.9", extras = ["all"] }
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7"
+
+[tool.poetry.scripts]
+# Register CLI
+python-example = "python_example.__main__:cli"
+
+# See: https://python-poetry.org/docs/pyproject/#poetry-and-pep-517
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

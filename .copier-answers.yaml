@@ -1,0 +1,14 @@
+---
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: 52bc445
+_src_path: ./
+description: Python project example 🐍
+docs: true
+docsurl: https://quickplates.github.io/python-example
+email: quickplates@mail.spietras.dev
+executable: true
+importname: python_example
+projectname: python-example
+pypi: false
+registry: true
+username: quickplates

@@ -1,0 +1,5 @@
+---
+services:
+  python-example:
+    build: .
+    network_mode: host
